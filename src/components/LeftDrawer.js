@@ -4,7 +4,7 @@ import {spacing, typography} from 'material-ui/styles';
 import {white, blue600} from 'material-ui/styles/colors';
 import MenuItem from 'material-ui/MenuItem';
 import {Link} from 'react-router';
-import Avatar from 'material-ui/Avatar';
+//import Avatar from 'material-ui/Avatar';
 
 const LeftDrawer = (props) => {
   let { navDrawerOpen } = props;
@@ -53,12 +53,12 @@ const LeftDrawer = (props) => {
         <div style={styles.logo}>
           Material Admin
         </div>
-        <div style={styles.avatar.div}>
+        {/* <div style={styles.avatar.div}>
           <Avatar src="../images/material_bg.png"
                   size={50}
                   style={styles.avatar.icon}/>
           <span style={styles.avatar.span}>{props.username}</span>
-        </div>
+        </div> */}
         <div>
           {props.menus.map((menu, index) =>
             <MenuItem

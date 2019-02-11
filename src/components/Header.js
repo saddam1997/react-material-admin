@@ -6,9 +6,9 @@ import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import Menu from 'material-ui/svg-icons/navigation/menu';
-import ViewModule from 'material-ui/svg-icons/action/view-module';
+//import ViewModule from 'material-ui/svg-icons/action/view-module';
 import {white} from 'material-ui/styles/colors';
-import SearchBox from './SearchBox';
+//import SearchBox from './SearchBox';
 
 class Header extends React.Component {
 
@@ -34,9 +34,7 @@ class Header extends React.Component {
         <div>
             <AppBar
               style={{...styles, ...style.appBar}}
-              title={
-                <SearchBox />
-              }
+              
               iconElementLeft={
                   <IconButton style={style.menuButton} onClick={handleChangeRequestNavDrawer}>
                     <Menu color={white} />
@@ -44,7 +42,7 @@ class Header extends React.Component {
               }
               iconElementRight={
                 <div style={style.iconsRightContainer}>
-                  <IconMenu color={white}
+                  {/* <IconMenu color={white}
                             iconButtonElement={
                               <IconButton><ViewModule color={white}/></IconButton>
                             }
@@ -54,7 +52,7 @@ class Header extends React.Component {
                     <MenuItem key={1} primaryText="Application 1"/>
                     <MenuItem key={2} primaryText="Application 2"/>
                     <MenuItem key={3} primaryText="Application 3"/>
-                  </IconMenu>
+                  </IconMenu> */}
                   <IconMenu color={white}
                             iconButtonElement={
                               <IconButton><MoreVertIcon color={white}/></IconButton>
